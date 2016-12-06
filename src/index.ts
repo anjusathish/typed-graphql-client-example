@@ -1,9 +1,7 @@
-interface TestType {
-  count: number;
+import {FeedQuery} from './schema';
+
+const results: FeedQuery = {
+  feed: []
 };
 
-function square({count}: TestType) {
-  return count * count;
-}
-
-console.log(square({count: 2}));
+results.feed.map(item => item.repository.name);

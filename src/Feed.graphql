@@ -1,0 +1,10 @@
+query Feed {
+  feed (type: NEW, limit: 5) {
+    repository {
+      owner { login }
+      name
+    }
+
+    postedBy { login }
+  }
+}

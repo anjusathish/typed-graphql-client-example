@@ -10,7 +10,10 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "download-schema": "apollo-codegen download-schema http://localhost:3010/graphql --output schema.json"
+    "download-schema": "apollo-codegen download-schema http://localhost:3010/graphql --output schema.json",
+    "generate-graphql-types": "apollo-codegen generate **/*.graphql --schema schema.json --target ts --output src/schema.ts",
+    "prebuild": "npm run generate-graphql-types",
+    "prestart": "npm run generate-graphql-types"
   },
   "devDependencies": {
     "apollo-codegen": "^0.9.5",
