@@ -39,3 +39,4 @@ jspm_packages
 # Compiled files are ignored
 dist
 src/schema.ts
+src/documents.json
