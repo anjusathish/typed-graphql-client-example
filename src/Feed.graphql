@@ -2,10 +2,10 @@
 query Feed {
   feed (type: NEW, limit: 5) {
     repository {
-      owner { login }
-      name
+      ...FeedRepo
     }
-
-    postedBy { login }
+    postedBy {
+      ...FeedAuthor
+    }
   }
 }
