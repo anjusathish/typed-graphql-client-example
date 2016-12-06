@@ -18,7 +18,7 @@ client.query({
             ${repository.owner.login}/${repository.name}
           </a>
           <span> - posted by: </span>
-          <span>${postedBy.login}</span>
+          <a href="https://github.com/${postedBy.login}">${postedBy.login}</span>
         </li>
       `).join('\n')}
     </ul>
