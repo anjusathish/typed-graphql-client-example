@@ -15,4 +15,11 @@ module.exports = {
       { test: /\.json$/, loader: 'json-loader' },
     ],
   },
+  devServer: {
+    proxy: {
+      '/graphql': {
+        target: 'http://localhost:3010/graphql',
+      },
+    },
+  },
 };
