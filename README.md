@@ -1,5 +1,7 @@
 # typed-graphql-client-example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/apollographql/typed-graphql-client-example.svg)](https://greenkeeper.io/)
+
 This experimental project shows how to use the following projects to make your Development Experience with GraphQL better:
 
 - [`apollo-codegen`](https://github.com/apollostack/apollo-codegen)
